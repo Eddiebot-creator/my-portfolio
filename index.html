@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A vivid, interactive personal portfolio for showcasing projects, skills, and contact details."
+    />
+    <title>Eddiebot Creator | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&family=Urbanist:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <aside class="sidebar" aria-label="Portfolio navigation">
+        <a class="brand" href="#home" aria-label="Portfolio home">
+          <span class="brand-mark">Y</span>
+          <span>Eddiefolio</span>
+        </a>
+
+        <nav class="nav">
+          <a class="nav-link active" href="#work" data-section="work">
+            <span>▦</span> Showcase
+          </a>
+          <a class="nav-link" href="#insights" data-section="insights">
+            <span>↗</span> Insights
+          </a>
+          <a class="nav-link" href="#about" data-section="about">
+            <span>◎</span> About Me
+          </a>
+          <a class="nav-link" href="#contact" data-section="contact">
+            <span>✉</span> Contact
+          </a>
+        </nav>
+
+        <div class="profile-chip">
+          <div class="avatar">EC</div>
+          <div>
+            <strong>Eddiebot Creator</strong>
+            <span>Creative Developer</span>
+          </div>
+        </div>
+
+        <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+          <span class="toggle-icon">☾</span>
+          <span>Switch Theme</span>
+        </button>
+      </aside>
+
+      <main>
+        <section class="hero" id="home">
+          <div class="hero-bg" aria-hidden="true"></div>
+          <div class="hero-copy reveal">
+            <span class="eyebrow">Available for freelance and full-time work</span>
+            <h1>Crafting Digital <span>Experiences</span></h1>
+            <p>
+              I design and build energetic websites, interfaces, and digital
+              products that feel clear, fast, and memorable.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#work">View Projects</a>
+              <a class="button ghost" href="#contact">Hire Me</a>
+            </div>
+          </div>
+          <div class="hero-panel reveal">
+            <p class="panel-label">Now Building</p>
+            <h2>Interactive portfolio systems</h2>
+            <div class="meter">
+              <span style="width: 86%"></span>
+            </div>
+            <ul>
+              <li>Responsive websites</li>
+              <li>UI/UX prototypes</li>
+              <li>Frontend apps</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section stats" id="insights" aria-label="Portfolio stats">
+          <article class="stat-card reveal">
+            <strong>12+</strong>
+            <span>Projects shipped</span>
+          </article>
+          <article class="stat-card reveal">
+            <strong>5</strong>
+            <span>Core services</span>
+          </article>
+          <article class="stat-card reveal">
+            <strong>100%</strong>
+            <span>Responsive builds</span>
+          </article>
+        </section>
+
+        <section class="section" id="work">
+          <div class="section-heading reveal">
+            <div>
+              <span class="eyebrow">Featured Work</span>
+              <h2>Projects that show range</h2>
+            </div>
+            <label class="search">
+              <span>Search</span>
+              <input id="projectSearch" type="search" placeholder="Search projects..." />
+            </label>
+          </div>
+
+          <div class="filters reveal" aria-label="Project filters">
+            <button class="filter active" type="button" data-filter="all">All Works</button>
+            <button class="filter" type="button" data-filter="Web">Web</button>
+            <button class="filter" type="button" data-filter="UI/UX">UI/UX</button>
+            <button class="filter" type="button" data-filter="Branding">Branding</button>
+          </div>
+
+          <div class="project-grid" id="projectGrid">
+            <article class="project-card reveal" data-category="Web" data-title="Neon Pulse dashboard">
+              <div class="project-art neon"></div>
+              <div class="project-body">
+                <span>Web</span>
+                <h3>Neon Pulse</h3>
+                <p>A high-impact landing page and analytics dashboard concept with vibrant motion.</p>
+                <a href="https://github.com/Eddiebot-creator" target="_blank" rel="noreferrer">View on GitHub</a>
+              </div>
+            </article>
+            <article class="project-card reveal" data-category="Branding" data-title="Eco Flow identity">
+              <div class="project-art eco"></div>
+              <div class="project-body">
+                <span>Branding</span>
+                <h3>Eco Flow</h3>
+                <p>A clean identity system for a sustainability-focused startup.</p>
+                <a href="https://github.com/Eddiebot-creator" target="_blank" rel="noreferrer">View on GitHub</a>
+              </div>
+            </article>
+            <article class="project-card reveal" data-category="UI/UX" data-title="Arcade Theory app">
+              <div class="project-art arcade"></div>
+              <div class="project-body">
+                <span>UI/UX</span>
+                <h3>Arcade Theory</h3>
+                <p>A gamified mobile experience that turns everyday actions into progress.</p>
+                <a href="https://github.com/Eddiebot-creator" target="_blank" rel="noreferrer">View on GitHub</a>
+              </div>
+            </article>
+            <article class="project-card reveal" data-category="Web" data-title="Prism UI design system">
+              <div class="project-art prism"></div>
+              <div class="project-body">
+                <span>Web</span>
+                <h3>Prism UI</h3>
+                <p>A modular component library concept focused on scale and accessibility.</p>
+                <a href="https://github.com/Eddiebot-creator" target="_blank" rel="noreferrer">View on GitHub</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section about" id="about">
+          <div class="about-copy reveal">
+            <span class="eyebrow">About Me</span>
+            <h2>I turn ideas into clean, expressive websites.</h2>
+            <p>
+              I enjoy building useful, polished web experiences with clean
+              interfaces, strong visual energy, and practical functionality. This
+              portfolio is a home for my projects, experiments, and growth as a
+              developer.
+            </p>
+          </div>
+          <div class="skills reveal">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>UI Design</span>
+            <span>GitHub</span>
+          </div>
+        </section>
+
+        <section class="section contact" id="contact">
+          <div class="contact-card reveal">
+            <span class="eyebrow">Contact</span>
+            <h2>Ready to start something bright?</h2>
+            <p>Send me a message for collaborations, freelance work, or project ideas.</p>
+            <div class="contact-actions">
+              <a class="button primary" href="mailto:edidiongantia89@gmail.com">Email Me</a>
+              <a class="button ghost" href="https://github.com/Eddiebot-creator" target="_blank" rel="noreferrer">
+                GitHub
+              </a>
+              <a class="button ghost" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+                LinkedIn
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
