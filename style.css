@@ -318,7 +318,7 @@ h1 span {
 }
 
 .hero-panel li::before {
-  content: "•";
+  content: "*";
   margin-right: 10px;
   color: var(--secondary);
 }
@@ -438,31 +438,61 @@ h1 span {
     repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.18) 0 2px, transparent 2px 18px);
 }
 
-.project-art.neon {
+.project-art.pharmrun {
   background-color: #090932;
   background-image:
-    radial-gradient(circle at 75% 20%, #ff2d87 0 10%, transparent 26%),
-    linear-gradient(135deg, #0066ff, #090932 55%, #ffe500);
+    radial-gradient(circle at 75% 20%, #00d1ff 0 12%, transparent 28%),
+    linear-gradient(135deg, #0066ff, #090932 55%, #34d399);
 }
 
-.project-art.eco {
-  background-color: #dffbea;
-  background-image:
-    radial-gradient(circle at 30% 30%, #00d1ff 0 12%, transparent 28%),
-    linear-gradient(135deg, #ffffff, #7cffb0);
-}
-
-.project-art.arcade {
-  background-color: #17002e;
-  background-image:
-    linear-gradient(90deg, rgba(255, 229, 0, 0.9), transparent),
-    radial-gradient(circle at 75% 25%, #ff2d87 0 14%, transparent 30%);
-}
-
-.project-art.prism {
+.project-art.linkstream {
   background-color: #f5f7ff;
   background-image:
-    linear-gradient(135deg, #0066ff 0 20%, transparent 20% 40%, #ff2d87 40% 60%, transparent 60% 80%, #ffe500 80%);
+    radial-gradient(circle at 18% 22%, #ffe500 0 12%, transparent 28%),
+    radial-gradient(circle at 80% 72%, #ff2d87 0 14%, transparent 34%),
+    linear-gradient(135deg, #ffffff, #0066ff);
+}
+
+.project-art.streakly {
+  background-color: #101828;
+  background-image:
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.14) 0 2px, transparent 2px 24px),
+    linear-gradient(135deg, #ff2d87, #0066ff 48%, #ffe500);
+}
+
+.project-art.teledoc {
+  background-color: #083344;
+  background-image:
+    radial-gradient(circle at 70% 24%, #67e8f9 0 12%, transparent 28%),
+    linear-gradient(135deg, #0f766e, #0066ff 54%, #ffffff);
+}
+
+.project-art.hams {
+  background-color: #1e1b4b;
+  background-image:
+    linear-gradient(90deg, rgba(255, 229, 0, 0.85), transparent),
+    radial-gradient(circle at 80% 30%, #ff2d87 0 14%, transparent 32%);
+}
+
+.project-art.examai {
+  background-color: #111827;
+  background-image:
+    radial-gradient(circle at 30% 25%, #ff2d87 0 13%, transparent 32%),
+    radial-gradient(circle at 72% 72%, #0066ff 0 16%, transparent 36%),
+    linear-gradient(135deg, #111827, #312e81);
+}
+
+.project-art.billsplitter {
+  background-color: #064e3b;
+  background-image:
+    radial-gradient(circle at 22% 72%, #ffe500 0 11%, transparent 28%),
+    linear-gradient(135deg, #10b981, #0066ff);
+}
+
+.project-art.media {
+  background-color: #4c0519;
+  background-image:
+    linear-gradient(135deg, #ff2d87 0 20%, transparent 20% 40%, #0066ff 40% 60%, transparent 60% 80%, #ffe500 80%);
 }
 
 .project-body {
